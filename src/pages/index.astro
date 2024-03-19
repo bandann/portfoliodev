@@ -2,13 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import ApiData from '../components/ApiData.astro';
 import InfoSeccion from '../components/InfoSeccion.astro';
+import Mainbanner from '../components/Mainbanner.astro';
+import Presentacion from '../components/Presentacion.astro';
+import Tabs from '../components/Tabs.astro';
+
 import { number } from 'astro/zod';
 
 ---
 
 <Layout title="Bandann Dev">
   
-  <InfoSeccion />
-  <ApiData />
+  <Mainbanner/>
+  <Tabs/>
+
+ 
  
 </Layout>

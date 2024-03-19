@@ -1,23 +1,19 @@
 ---
-
+import Darkmode from '../components/Darkmode.astro';
 console.log('esto es astro mano')
 ---
 
   <!-- Navbar -->
-  <nav class="bg-gray-800 p-4 w-full top-0">
+  <nav class="bg-transparent p-4 w-full top-0 position-sticky">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo o Nombre de la Marca -->
       <a href="#" class="text-white text-lg font-semibold">Bandann-Dev</a>
 
       <!-- Elementos del Navbar -->
       <div class="flex space-x-4">
-        <a href="#" class="text-white hover:text-gray-300">Home</a>
-        <a href="#" class="text-white hover:text-gray-300">Presentación</a>
-        <a href="#" class="text-white hover:text-gray-300">Proyectos</a>
-        <a href="#" class="text-white hover:text-gray-300">Experiencia</a>
-
+      
+          <Darkmode/>
         <!-- Botón Resaltado -->
-        <a href="#" class="bg-blue-800 text-white px-4 py-2 rounded hover:bg-blue-900">Descargar CV</a>
       </div>
     </div>
   </nav>

@@ -6,23 +6,30 @@ interface Props {
 const { title } = Astro.props;
 import Header from '../components/Header.astro';
 import Mainbanner from '../components/Mainbanner.astro';
+import Presentacion from '../components/Presentacion.astro';
+import Projects from '../components/Projects.astro';
+
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<script>
+ 
+</script>
 		<title>{title}</title>
 	</head>
 	<body>
 		<Header />
-		<Mainbanner/>
-		<main class="m-auto px-60" >
-			<slot />
+		<slot />
+		<main class="m-auto" >
+			<Projects/>
+		
 		</main>
 	</body>
 </html>
@@ -33,6 +40,17 @@ import Mainbanner from '../components/Mainbanner.astro';
 		background: #13151a;
 		background-size: 224px;
 		color-scheme: dark light;
+	}
+	body{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.light-mode{
+		background:#fafafa;
+	}
+	.dark-mode{
+		background: #13151a;
 	}
 	
 </style>
