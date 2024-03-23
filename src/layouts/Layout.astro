@@ -28,8 +28,8 @@ import Projects from '../components/Projects.astro';
 		<Header />
 		<slot />
 		<main class="m-auto" >
-			<Projects/>
 		
+		<Projects/>
 		</main>
 	</body>
 </html>
@@ -38,14 +38,11 @@ import Projects from '../components/Projects.astro';
 	html {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
-		background-size: 224px;
+		
 		color-scheme: dark light;
+	
 	}
-	body{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+
 	.light-mode{
 		background:#fafafa;
 	}
